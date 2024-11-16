@@ -36,11 +36,11 @@ public class SalesPersonWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
         txtCustName = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        btnProcessOrder = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnServeCustomers = new javax.swing.JButton();
+        btnManageProfile = new javax.swing.JButton();
+        btnReviewOrderStatusHistory = new javax.swing.JButton();
+        btnReviewComission = new javax.swing.JButton();
+        btnPerformanceReports = new javax.swing.JButton();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -54,25 +54,75 @@ public class SalesPersonWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(txtCustName, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 150, -1));
 
-        jButton1.setText("jButton1");
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 130, -1));
-
-        btnProcessOrder.setText("Process Order");
-        btnProcessOrder.addActionListener(new java.awt.event.ActionListener() {
+        btnServeCustomers.setBackground(new java.awt.Color(102, 153, 255));
+        btnServeCustomers.setForeground(new java.awt.Color(255, 255, 255));
+        btnServeCustomers.setText("Serve Customers");
+        btnServeCustomers.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnServeCustomers.setMaximumSize(new java.awt.Dimension(200, 40));
+        btnServeCustomers.setMinimumSize(new java.awt.Dimension(20, 23));
+        btnServeCustomers.setPreferredSize(new java.awt.Dimension(240, 30));
+        btnServeCustomers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProcessOrderActionPerformed(evt);
+                btnServeCustomersIdentifyResourceAssetsActionPerformed(evt);
             }
         });
-        add(btnProcessOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 130, -1));
+        add(btnServeCustomers, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 300, -1, -1));
 
-        jButton3.setText("jButton1");
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 130, -1));
+        btnManageProfile.setBackground(new java.awt.Color(102, 153, 255));
+        btnManageProfile.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageProfile.setText("Manage Profile");
+        btnManageProfile.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnManageProfile.setMaximumSize(new java.awt.Dimension(200, 40));
+        btnManageProfile.setMinimumSize(new java.awt.Dimension(20, 20));
+        btnManageProfile.setPreferredSize(new java.awt.Dimension(240, 25));
+        btnManageProfile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnManageProfileActionPerformed(evt);
+            }
+        });
+        add(btnManageProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
 
-        jButton4.setText("jButton1");
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, 130, -1));
+        btnReviewOrderStatusHistory.setBackground(new java.awt.Color(102, 153, 255));
+        btnReviewOrderStatusHistory.setForeground(new java.awt.Color(255, 255, 255));
+        btnReviewOrderStatusHistory.setText("Review Order Status History");
+        btnReviewOrderStatusHistory.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnReviewOrderStatusHistory.setMaximumSize(new java.awt.Dimension(200, 40));
+        btnReviewOrderStatusHistory.setMinimumSize(new java.awt.Dimension(20, 20));
+        btnReviewOrderStatusHistory.setPreferredSize(new java.awt.Dimension(240, 25));
+        btnReviewOrderStatusHistory.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReviewOrderStatusHistoryActionPerformed(evt);
+            }
+        });
+        add(btnReviewOrderStatusHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 220, -1, -1));
 
-        jButton5.setText("jButton1");
-        add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 130, -1));
+        btnReviewComission.setBackground(new java.awt.Color(102, 153, 255));
+        btnReviewComission.setForeground(new java.awt.Color(255, 255, 255));
+        btnReviewComission.setText("Review Comission");
+        btnReviewComission.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnReviewComission.setMaximumSize(new java.awt.Dimension(200, 40));
+        btnReviewComission.setMinimumSize(new java.awt.Dimension(20, 20));
+        btnReviewComission.setPreferredSize(new java.awt.Dimension(240, 25));
+        btnReviewComission.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReviewComissionActionPerformed(evt);
+            }
+        });
+        add(btnReviewComission, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, -1, -1));
+
+        btnPerformanceReports.setBackground(new java.awt.Color(102, 153, 255));
+        btnPerformanceReports.setForeground(new java.awt.Color(255, 255, 255));
+        btnPerformanceReports.setText("Performance Reports");
+        btnPerformanceReports.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnPerformanceReports.setMaximumSize(new java.awt.Dimension(200, 40));
+        btnPerformanceReports.setMinimumSize(new java.awt.Dimension(20, 20));
+        btnPerformanceReports.setPreferredSize(new java.awt.Dimension(240, 25));
+        btnPerformanceReports.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPerformanceReportsActionPerformed(evt);
+            }
+        });
+        add(btnPerformanceReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtCustNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCustNameActionPerformed
@@ -80,8 +130,10 @@ public class SalesPersonWorkAreaJPanel extends javax.swing.JPanel {
         
     }//GEN-LAST:event_txtCustNameActionPerformed
 
-    private void btnProcessOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProcessOrderActionPerformed
+    private void btnServeCustomersIdentifyResourceAssetsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServeCustomersIdentifyResourceAssetsActionPerformed
+
         // TODO add your handling code here:
+
         String customername = txtCustName.getText();
         if (customername.isEmpty()) return;
         CustomerProfile selectedcustomer = business.getCustomerDirectory().findCustomer(customername);
@@ -90,15 +142,53 @@ public class SalesPersonWorkAreaJPanel extends javax.swing.JPanel {
 
         CardSequencePanel.add("ManageVulns", aos);
         ((java.awt.CardLayout) CardSequencePanel.getLayout()).next(CardSequencePanel);
-    }//GEN-LAST:event_btnProcessOrderActionPerformed
+    }//GEN-LAST:event_btnServeCustomersIdentifyResourceAssetsActionPerformed
+
+    private void btnManageProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageProfileActionPerformed
+        // TODO add your handling code here:
+
+        //        ManageVulns aos = new  ManageVulns(businessunit, CardSequencePanel);
+        // aos.setAgenda(businessunit.getRiskManagementAgenda());
+        //        CardSequencePanel.add("ManageVulns", aos);
+        ((java.awt.CardLayout) CardSequencePanel.getLayout()).next(CardSequencePanel);
+    }//GEN-LAST:event_btnManageProfileActionPerformed
+
+    private void btnReviewOrderStatusHistoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReviewOrderStatusHistoryActionPerformed
+        // TODO add your handling code here:
+
+        ManageSalesPersonOrders iet = new ManageSalesPersonOrders(business, CardSequencePanel);
+
+        CardSequencePanel.add("FindResourceAsset", iet);
+        ((java.awt.CardLayout) CardSequencePanel.getLayout()).next(CardSequencePanel);
+    }//GEN-LAST:event_btnReviewOrderStatusHistoryActionPerformed
+
+    private void btnReviewComissionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReviewComissionActionPerformed
+        // TODO add your handling code here:
+
+        CardSequencePanel.removeAll();
+        //      ViewBusinessUnitRiskProfile drpd= new ViewBusinessUnitRiskProfile(businessunit, CardSequencePanel);
+        //        ManageHazards drpd = new ManageHazards(businessunit, CardSequencePanel);
+        //        CardSequencePanel.add("ManageRiskProfiles", drpd);
+        ((java.awt.CardLayout) CardSequencePanel.getLayout()).next(CardSequencePanel);
+    }//GEN-LAST:event_btnReviewComissionActionPerformed
+
+    private void btnPerformanceReportsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPerformanceReportsActionPerformed
+        // TODO add your handling code here:
+
+        CardSequencePanel.removeAll();
+        //        ManageIncidents aos = new  ManageIncidents(businessunit, CardSequencePanel);
+        // aos.setAgenda(businessunit.getRiskManagementAgenda());
+        //        CardSequencePanel.add("RiskAgendaObjectives", aos);
+        ((java.awt.CardLayout) CardSequencePanel.getLayout()).next(CardSequencePanel);
+    }//GEN-LAST:event_btnPerformanceReportsActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnProcessOrder;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton btnManageProfile;
+    private javax.swing.JButton btnPerformanceReports;
+    private javax.swing.JButton btnReviewComission;
+    private javax.swing.JButton btnReviewOrderStatusHistory;
+    private javax.swing.JButton btnServeCustomers;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField txtCustName;
     // End of variables declaration//GEN-END:variables

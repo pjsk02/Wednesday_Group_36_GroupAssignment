@@ -5,6 +5,7 @@
 package ui.workSpaceProfiles;
 
 import model.Business.Business;
+import ui.ManageTheBusiness.ManageTheBusinessJPanel;
 
 /**
  *
@@ -20,7 +21,7 @@ public class MarketingManagerWorkAreaJPanel extends javax.swing.JPanel {
      */
     public MarketingManagerWorkAreaJPanel(Business business, JPanel jPanel) {
         initComponents();
-        business = business;
+        this.business = business;
         this.CardSequencePanel = jPanel;
     }
 
