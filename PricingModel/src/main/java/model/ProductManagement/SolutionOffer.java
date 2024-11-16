@@ -17,6 +17,9 @@ public class SolutionOffer {
     ArrayList<Product> products;
     int price;//floor, ceiling, and target ideas
     MarketChannelAssignment marketchannelcomb;
+    String x;
+    
+    
     public SolutionOffer(MarketChannelAssignment m){
         marketchannelcomb = m;
         products = new ArrayList();
