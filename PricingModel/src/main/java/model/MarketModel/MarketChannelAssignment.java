@@ -17,7 +17,7 @@ public class MarketChannelAssignment {
     
     Market market;
     Channel channel;
-    int adbudget;
+//    int adbudget;
     ArrayList<SolutionOffer> solutionofferlist;
     ArrayList<SolutionOrder> solutionorderlist;
     
