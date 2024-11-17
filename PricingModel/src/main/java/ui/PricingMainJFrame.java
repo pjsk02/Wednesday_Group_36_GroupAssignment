@@ -74,6 +74,11 @@ public class PricingMainJFrame extends javax.swing.JFrame {
         });
 
         btnMarketing.setText("Marketing");
+        btnMarketing.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMarketingActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout actionsidejpanelLayout = new javax.swing.GroupLayout(actionsidejpanel);
         actionsidejpanel.setLayout(actionsidejpanelLayout);
@@ -129,6 +134,10 @@ public class PricingMainJFrame extends javax.swing.JFrame {
     private void btnSupplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSupplierActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSupplierActionPerformed
+
+    private void btnMarketingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMarketingActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMarketingActionPerformed
 
     /**
      * @param args the command line arguments
