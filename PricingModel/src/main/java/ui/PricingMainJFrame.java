@@ -15,6 +15,7 @@ import model.Supplier.SupplierDirectory;
 import model.UserAccountManagement.UserAccount;
 import model.UserAccountManagement.UserAccountDirectory;
 import ui.AdminRole.AdminWorkAreaJPanel;
+import ui.Supplier.LoginSupplierJPanel;
 import ui.workSpaceProfiles.BusinessManagerWorkAreaJPanel;
 import ui.workSpaceProfiles.MarketingManagerWorkAreaJPanel;
 import ui.workSpaceProfiles.SalesPersonWorkAreaJPanel;
@@ -133,6 +134,10 @@ public class PricingMainJFrame extends javax.swing.JFrame {
 
     private void btnSupplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSupplierActionPerformed
         // TODO add your handling code here:
+        LoginSupplierJPanel ls = new LoginSupplierJPanel(CardSequencePanel, supplierDirectory);
+        CardSequencePanel.add("LoginSupplierJPanel", ls);
+        CardLayout layout = (CardLayout)CardSequencePanel.getLayout();
+        layout.next(CardSequencePanel);
     }//GEN-LAST:event_btnSupplierActionPerformed
 
     private void btnMarketingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMarketingActionPerformed

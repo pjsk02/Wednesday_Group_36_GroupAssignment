@@ -29,6 +29,9 @@ public class ProductSummary {
     
     }
     
+    public Product getSubjectProduct() {
+    return subjectproduct;
+}
     public int getSalesRevenues(){
         return acutalsalesvolume;
     }
