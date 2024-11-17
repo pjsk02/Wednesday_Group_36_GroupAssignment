@@ -4,10 +4,19 @@
  */
 package ui;
 
+import java.awt.CardLayout;
 import model.Business.Business;
 import model.Business.ConfigureABusiness;
+import model.MarketingManagement.MarketingPersonProfile;
+import model.Personnel.EmployeeProfile;
+import model.Personnel.Profile;
+import model.SalesManagement.SalesPersonProfile;
+import model.Supplier.SupplierDirectory;
 import model.UserAccountManagement.UserAccount;
 import model.UserAccountManagement.UserAccountDirectory;
+import ui.AdminRole.AdminWorkAreaJPanel;
+import ui.workSpaceProfiles.BusinessManagerWorkAreaJPanel;
+import ui.workSpaceProfiles.MarketingManagerWorkAreaJPanel;
 import ui.workSpaceProfiles.SalesPersonWorkAreaJPanel;
 
 /**
@@ -21,9 +30,12 @@ public class PricingMainJFrame extends javax.swing.JFrame {
      */
     Business business;
     
+    SupplierDirectory supplierDirectory;
+    
     public PricingMainJFrame() {
         initComponents();
         business = ConfigureABusiness.initialize();
+        supplierDirectory = business.getSupplierDirectory();
     }
 
     /**
@@ -35,91 +47,88 @@ public class PricingMainJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSplitPane1 = new javax.swing.JSplitPane();
-        leftSplitPane = new javax.swing.JPanel();
-        txtUserName = new javax.swing.JTextField();
-        txtPassword = new javax.swing.JTextField();
-        btnLogin = new javax.swing.JButton();
-        rightSplitPane = new javax.swing.JPanel();
+        SplitHomeArea = new javax.swing.JSplitPane();
+        actionsidejpanel = new javax.swing.JPanel();
+        btnAdmin = new javax.swing.JButton();
+        btnSupplier = new javax.swing.JButton();
+        btnMarketing = new javax.swing.JButton();
+        CardSequencePanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        leftSplitPane.setBackground(new java.awt.Color(185, 0, 20));
+        actionsidejpanel.setBackground(new java.awt.Color(185, 0, 20));
 
-        txtUserName.setText("Username");
-
-        txtPassword.setText("Password");
-        txtPassword.addActionListener(new java.awt.event.ActionListener() {
+        btnAdmin.setText("Administrator");
+        btnAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPasswordActionPerformed(evt);
+                btnAdminActionPerformed(evt);
             }
         });
 
-        btnLogin.setText("Login");
-        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+        btnSupplier.setText("Supplier");
+        btnSupplier.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLoginActionPerformed(evt);
+                btnSupplierActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout leftSplitPaneLayout = new javax.swing.GroupLayout(leftSplitPane);
-        leftSplitPane.setLayout(leftSplitPaneLayout);
-        leftSplitPaneLayout.setHorizontalGroup(
-            leftSplitPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(leftSplitPaneLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(leftSplitPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnLogin)
-                    .addGroup(leftSplitPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(22, Short.MAX_VALUE))
+        btnMarketing.setText("Marketing");
+
+        javax.swing.GroupLayout actionsidejpanelLayout = new javax.swing.GroupLayout(actionsidejpanel);
+        actionsidejpanel.setLayout(actionsidejpanelLayout);
+        actionsidejpanelLayout.setHorizontalGroup(
+            actionsidejpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(actionsidejpanelLayout.createSequentialGroup()
+                .addGroup(actionsidejpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(actionsidejpanelLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnAdmin))
+                    .addGroup(actionsidejpanelLayout.createSequentialGroup()
+                        .addGroup(actionsidejpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(actionsidejpanelLayout.createSequentialGroup()
+                                .addGap(16, 16, 16)
+                                .addComponent(btnSupplier))
+                            .addGroup(actionsidejpanelLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(btnMarketing)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
-        leftSplitPaneLayout.setVerticalGroup(
-            leftSplitPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(leftSplitPaneLayout.createSequentialGroup()
-                .addGap(72, 72, 72)
-                .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
-                .addComponent(btnLogin)
-                .addContainerGap(512, Short.MAX_VALUE))
+        actionsidejpanelLayout.setVerticalGroup(
+            actionsidejpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(actionsidejpanelLayout.createSequentialGroup()
+                .addGap(112, 112, 112)
+                .addComponent(btnAdmin)
+                .addGap(54, 54, 54)
+                .addComponent(btnSupplier)
+                .addGap(49, 49, 49)
+                .addComponent(btnMarketing)
+                .addContainerGap(436, Short.MAX_VALUE))
         );
 
-        jSplitPane1.setLeftComponent(leftSplitPane);
+        SplitHomeArea.setLeftComponent(actionsidejpanel);
 
-        rightSplitPane.setBackground(new java.awt.Color(241, 234, 233));
-        rightSplitPane.setLayout(new java.awt.CardLayout());
-        jSplitPane1.setRightComponent(rightSplitPane);
+        CardSequencePanel.setBackground(new java.awt.Color(241, 252, 249));
+        CardSequencePanel.setLayout(new java.awt.CardLayout());
+        SplitHomeArea.setRightComponent(CardSequencePanel);
 
-        getContentPane().add(jSplitPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 3, 1030, 720));
+        getContentPane().add(SplitHomeArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 3, 1030, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+    private void btnAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminActionPerformed
         // TODO add your handling code here:
-        
-        String userName = txtUserName.getText();
-        String pswd = txtPassword.getText();
-        
-        UserAccountDirectory uad = business.getUserAccountDirectory();
-        UserAccount useraccount = uad.AuthenticateUser(userName, pswd);
-        // Invaalid user exception handling
-        if (useraccount == null) {
-            return;
-        }
-        // Connecting Main frame with other Work Areas
-        SalesPersonWorkAreaJPanel salesworkarea;
-//        MarketingManagerWorkAreaJPanel1 marketingworkarea;
-//        BusinessManagerWorkAreaJPanel bzmanagerworkarea;
-    }//GEN-LAST:event_btnLoginActionPerformed
+        AdminWorkAreaJPanel awajp = new AdminWorkAreaJPanel(CardSequencePanel, supplierDirectory);
+        CardSequencePanel.add("AdminWorkAreaJPanel",awajp);
+        CardLayout layout = (CardLayout)CardSequencePanel.getLayout();
+        layout.next(CardSequencePanel);
+    }//GEN-LAST:event_btnAdminActionPerformed
 
-    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
+    private void btnSupplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSupplierActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordActionPerformed
+    }//GEN-LAST:event_btnSupplierActionPerformed
 
     /**
      * @param args the command line arguments
@@ -157,11 +166,11 @@ public class PricingMainJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnLogin;
-    private javax.swing.JSplitPane jSplitPane1;
-    private javax.swing.JPanel leftSplitPane;
-    private javax.swing.JPanel rightSplitPane;
-    private javax.swing.JTextField txtPassword;
-    private javax.swing.JTextField txtUserName;
+    private javax.swing.JPanel CardSequencePanel;
+    private javax.swing.JSplitPane SplitHomeArea;
+    private javax.swing.JPanel actionsidejpanel;
+    private javax.swing.JButton btnAdmin;
+    private javax.swing.JButton btnMarketing;
+    private javax.swing.JButton btnSupplier;
     // End of variables declaration//GEN-END:variables
 }

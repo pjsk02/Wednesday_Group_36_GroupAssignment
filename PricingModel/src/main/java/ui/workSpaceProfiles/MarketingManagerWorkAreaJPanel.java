@@ -4,8 +4,10 @@
  */
 package ui.workSpaceProfiles;
 
+import javax.swing.JPanel;
 import model.Business.Business;
 import ui.ManageTheBusiness.ManageTheBusinessJPanel;
+import ui.ProductManagement.ManageSuppliersJPanel;
 
 /**
  *

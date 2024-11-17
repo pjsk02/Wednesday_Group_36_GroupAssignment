@@ -4,9 +4,11 @@
  */
 package ui.workSpaceProfiles;
 
+import javax.swing.JPanel;
 import model.Business.Business;
 import model.CustomerManagement.CustomerProfile;
 import model.SalesManagement.SalesPersonProfile;
+import ui.workSpaceProfiles.OrderManagement.ManageSalesPersonOrders;
 import ui.workSpaceProfiles.OrderManagement.ProcessOrder;
 
 /**
@@ -21,7 +23,10 @@ public class SalesPersonWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form SalesPersonWorkAreaJapanel
      */
-    public SalesPersonWorkAreaJPanel() {
+    public SalesPersonWorkAreaJPanel(Business b, SalesPersonProfile spp, JPanel clp) {
+        business = b;
+        this.CardSequencePanel = clp;
+        salesperson = spp;
         initComponents();
     }
 
@@ -176,7 +181,7 @@ public class SalesPersonWorkAreaJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
 
         CardSequencePanel.removeAll();
-        //        ManageIncidents aos = new  ManageIncidents(businessunit, CardSequencePanel);
+//                ManageIncidents aos = new  ManageIncidents(businessunit, CardSequencePanel);
         // aos.setAgenda(businessunit.getRiskManagementAgenda());
         //        CardSequencePanel.add("RiskAgendaObjectives", aos);
         ((java.awt.CardLayout) CardSequencePanel.getLayout()).next(CardSequencePanel);
