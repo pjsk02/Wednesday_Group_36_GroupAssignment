@@ -34,4 +34,8 @@ public class SupplierDirectory {
         return suppliers;
     }
     
+    public void removeSupplier(Supplier s) {
+        suppliers.remove(s);
+    }
+    
 }
