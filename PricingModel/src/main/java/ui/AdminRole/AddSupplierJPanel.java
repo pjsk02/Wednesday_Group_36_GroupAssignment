@@ -125,8 +125,7 @@ public class AddSupplierJPanel extends javax.swing.JPanel {
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
 
-        Supplier supplier = supplierDirectory.newSupplier();
-        supplier.setSupplyName(txtName.getText());
+        Supplier supplier = supplierDirectory.newSupplier(txtName.getText());
         JOptionPane.showMessageDialog(null, "Supplier added successfully!!", "Info", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_btnAddActionPerformed
 

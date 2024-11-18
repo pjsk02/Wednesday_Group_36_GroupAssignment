@@ -34,6 +34,14 @@ public class Order {
         status = "in process";
     }
 
+    public ArrayList<OrderItem> getOrderitems() {
+        return orderitems;
+    }
+
+    public void setOrderitems(ArrayList<OrderItem> orderitems) {
+        this.orderitems = orderitems;
+    }
+
 
     public Order(CustomerProfile cp, SalesPersonProfile ep) {
         orderitems = new ArrayList();

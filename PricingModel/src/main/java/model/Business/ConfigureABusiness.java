@@ -48,6 +48,8 @@ public class ConfigureABusiness {
         Product s1p8 = productcatalog.newProduct("Photocopier 2", 30000, 70000, 50000);
         Product s1p9 = productcatalog.newProduct("Photocopier 3", 40000, 80000, 60000);
         Product s1p10 = productcatalog.newProduct("Photocopier 4", 50000, 90000, 70000);
+        
+        
 
 // Create Persons
         PersonDirectory persondirectory = business.getPersonDirectory();
