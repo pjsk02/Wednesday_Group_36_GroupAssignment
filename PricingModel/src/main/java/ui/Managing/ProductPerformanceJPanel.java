@@ -15,6 +15,41 @@ public class ProductPerformanceJPanel extends javax.swing.JPanel {
      */
     public ProductPerformanceJPanel() {
         initComponents();
+        userProcessContainer = upc;
+        bb=b;
+        supplierDirectory= b.getSupplierDirectory();
+        this.cust=cp;
+        
+        cmbsupplier.removeAllItems();
+        for(Supplier supplier : supplierDirectory.getSuplierList()) {
+            cmbsupplier.addItem(supplier.getName());
+         
+        }
+        refreshprod();
+    }
+    public void refreshprod(){
+    
+    int rc = tblCatalog.getRowCount();
+        int i;
+        for (i = rc - 1; i >= 0; i--) {
+            ((DefaultTableModel) tblCatalog.getModel()).removeRow(i);
+        }
+        for(Supplier s: supplierDirectory.getSuplierList()){
+     for(Product p: s.getProductCatalog().getProductList())  {
+     
+     
+      Object[] row = new Object[4];
+            row[0] = p;
+            row[1] = p.getFloorPrice();
+            row[2] = p.getCeilingPrice();
+            
+           row[3] = p.getTargetPrice();    
+//           row[4]=p.;
+
+            ((DefaultTableModel) tblCatalog.getModel()).addRow(row);
+     
+     } }
+    
     }
 
     /**
@@ -34,7 +69,7 @@ public class ProductPerformanceJPanel extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 402, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
