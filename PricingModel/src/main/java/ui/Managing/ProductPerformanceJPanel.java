@@ -4,7 +4,6 @@
  */
 package ui.Managing;
 
-<<<<<<< HEAD
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -18,8 +17,6 @@ import model.ProductManagement.Product;
 import model.Supplier.Supplier;
 import model.Supplier.SupplierDirectory;
 
-=======
->>>>>>> 8310a4261655bc488a8677b20f978d8f1c716a01
 /**
  *
  * @author Giridhar
@@ -29,7 +26,6 @@ public class ProductPerformanceJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ProductPerformanceJPanel
      */
-<<<<<<< HEAD
     private JPanel userProcessContainer;
     private SupplierDirectory supplierDirectory;
     Business bb;
@@ -37,9 +33,6 @@ public class ProductPerformanceJPanel extends javax.swing.JPanel {
     Product p1;
     
     public ProductPerformanceJPanel(JPanel upc, Business b,CustomerProfile cp) {
-=======
-    public ProductPerformanceJPanel() {
->>>>>>> 8310a4261655bc488a8677b20f978d8f1c716a01
         initComponents();
         userProcessContainer = upc;
         bb=b;
@@ -75,10 +68,6 @@ public class ProductPerformanceJPanel extends javax.swing.JPanel {
             ((DefaultTableModel) tblCatalog.getModel()).addRow(row);
      
      } }
-<<<<<<< HEAD
-=======
-    
->>>>>>> 8310a4261655bc488a8677b20f978d8f1c716a01
     }
 
     /**
@@ -90,7 +79,6 @@ public class ProductPerformanceJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-<<<<<<< HEAD
         jLabel10 = new javax.swing.JLabel();
         btnBook = new javax.swing.JButton();
         txtActualPrice1 = new javax.swing.JTextField();
@@ -98,18 +86,11 @@ public class ProductPerformanceJPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblCatalog = new javax.swing.JTable();
         txtActualPrice = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        jLabel7 = new javax.swing.JLabel();
-        txtProductName = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        txtFrequencyAboveTarget = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         btnRemove = new javax.swing.JButton();
-        txtFrequencyBelowTarget = new javax.swing.JTextField();
         btnAdd = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -160,10 +141,6 @@ public class ProductPerformanceJPanel extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 195, 723, 181));
         add(txtActualPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 220, 125, 28));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel3.setText("Business-wide Product Intelligence");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 603, 224, -1));
-
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -187,28 +164,14 @@ public class ProductPerformanceJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 416, 715, 181));
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel7.setText("Product Name");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 645, 142, 33));
-        add(txtProductName, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 684, 140, -1));
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel8.setText("Frequency Above Target");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(358, 645, 142, 33));
-
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setText("Order items");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 376, 132, 28));
-        add(txtFrequencyAboveTarget, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 684, 140, -1));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Actual Price");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 190, 125, 27));
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel9.setText("Frequency Below Target");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(549, 645, 142, 33));
 
         btnRemove.setText("Remove");
         btnRemove.addActionListener(new java.awt.event.ActionListener() {
@@ -217,7 +180,6 @@ public class ProductPerformanceJPanel extends javax.swing.JPanel {
             }
         });
         add(btnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 470, 125, -1));
-        add(txtFrequencyBelowTarget, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 684, 140, -1));
 
         btnAdd.setText("Add");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
@@ -331,37 +293,14 @@ public class ProductPerformanceJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable tblCatalog;
     private javax.swing.JTextField txtActualPrice;
     private javax.swing.JTextField txtActualPrice1;
-    private javax.swing.JTextField txtFrequencyAboveTarget;
-    private javax.swing.JTextField txtFrequencyBelowTarget;
-    private javax.swing.JTextField txtProductName;
-=======
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 402, Short.MAX_VALUE)
-        );
-    }// </editor-fold>//GEN-END:initComponents
-
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
->>>>>>> 8310a4261655bc488a8677b20f978d8f1c716a01
     // End of variables declaration//GEN-END:variables
 }

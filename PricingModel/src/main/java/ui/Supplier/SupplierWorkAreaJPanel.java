@@ -73,7 +73,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
 
         lblSupplier.setText("Supplier:");
 
-        tblProductCatalog.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        tblProductCatalog.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         tblProductCatalog.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},

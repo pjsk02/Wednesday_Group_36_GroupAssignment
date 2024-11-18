@@ -19,6 +19,14 @@ public class CustomerDirectory {
     Business business;
     ArrayList<CustomerProfile> customerlist;
 
+    public ArrayList<CustomerProfile> getCustomerlist() {
+        return customerlist;
+    }
+
+    public void setCustomerlist(ArrayList<CustomerProfile> customerlist) {
+        this.customerlist = customerlist;
+    }
+
     public CustomerDirectory(Business d) {
 
         business = d;

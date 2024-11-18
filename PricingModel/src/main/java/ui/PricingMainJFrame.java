@@ -18,9 +18,7 @@ import ui.AdminRole.AdminWorkAreaJPanel;
 import ui.Managing.ProductPerformanceJPanel;
 import ui.Managing.Salesworkpanel;
 import ui.Supplier.LoginSupplierJPanel;
-import ui.workSpaceProfiles.BusinessManagerWorkAreaJPanel;
-import ui.workSpaceProfiles.MarketingManagerWorkAreaJPanel;
-import ui.workSpaceProfiles.SalesPersonWorkAreaJPanel;
+
 
 /**
  *
