@@ -21,6 +21,14 @@ public class CustomerProfile {
     
     Person person;
 
+    public ArrayList<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(ArrayList<Order> orders) {
+        this.orders = orders;
+    }
+
     public CustomerProfile(Person p) {
 
         person = p;
